@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title="Health Coach", page_icon=":heart:", layout="wide" )
-st.title ("HealthCoach")
+
+with st.container():
+    st.title ("HealthCoach :heart: :running:")
+    st.subheader()
 
 if st.button('Say hello'):
     st.write('Why hello there')
