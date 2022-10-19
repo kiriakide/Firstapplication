@@ -12,3 +12,8 @@ else:
     st.write('Goodbye')
 
 st.run [entrypoint file]
+st.Home.py # This is the file you run with "streamlit run"
+    # pages/
+# About.py hey # This is a page
+2_Page_two.py # This is another page
+3_😎_three.py # So is this
