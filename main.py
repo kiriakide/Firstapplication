@@ -2,8 +2,8 @@ import entrypoint as entrypoint
 import streamlit as st
 import pandas as pd
 import numpy as np
-from numpy.core.setup_common import file
 
+st.set_page_config(page_title="Health Coach", page_icon=":red_heart", layout="wide" )
 st.title ("HealthCoach")
 
 if st.button('Say hello'):
