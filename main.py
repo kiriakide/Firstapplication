@@ -8,6 +8,8 @@ with st.container():
     st.title ("HealthCoach :heart: :running:")
     st.subheader("hey")
 
+st.sidebar.success("select a page above")
+
 if st.button('Say hello'):
     st.write('Why hello there')
 else:
