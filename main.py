@@ -20,10 +20,4 @@ if st.button('Say hello'):
 else:
     st.write('Goodbye')
 
-    color = st.color_picker('Pick A Color', '#00f900')
-    st.write('The current color is', color)
-    d = st.date_input(
-        "When's your birthday",
-        datetime.date(2019, 7, 6))
-    st.write('Your birthday is:', d)
 
