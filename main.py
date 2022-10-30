@@ -14,3 +14,24 @@ if st.button('Say hello'):
     st.write('Why hello there')
 else:
     st.write('Goodbye')
+
+
+
+import boto3
+
+
+def lambda_handler(event, context):
+
+    client = boto3.client("elasticbeanstalk")
+
+    response = client.describe_environment_health(
+        EnvironmentName="Myebapp-env", AttributeNames=["HealthStatus"]
+    )
+
+    output = (
+        """<font size="56 px" color="#444444">"""
+        + response["HealthStatus"]
+        + """</font>"""
+    )
+
+    return output
