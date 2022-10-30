@@ -10,11 +10,6 @@ with st.container():
 
 st.sidebar.success("select a page above")
 
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
-
 
 
 import boto3
